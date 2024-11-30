@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PakFixer</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assests/bootsrap/bootstrap.min.css">
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assests/css/style.css">
+  <link rel="stylesheet" href="./assests/css/online.css">
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header class="headerbox">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <!-- Brand Name -->
+        <b><a class="navbar-brand" href="#"><b><span class="text-success">PaK</span></b>Fixer</a></b>
+        <!-- Mobile Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy & Policy</a>
+            </li>
+          </ul>
+
+          <!-- Right Aligned Navbar Links -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Search <i class="fad fa-search mx-2"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In <i class="fad fa-sign-in-alt mx-2"></i> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Content -->
+    <div class="head-section">
+      <div class="container skill-work-section text-white">
+        <h1>Skills and Work</h1>
+        <p>Developing strong skills in any profession requires dedication</p>
+      </div>
+    </div>
+  </header>
+  <!-- End of Header Section -->
+
+  <!-- Skill Cards and Filters Section -->
+  <div class="content-section container">
+    <div class="row">
+      <!-- Filter Section -->
+      <div class="col-lg-3 col-sm-12 section-one">
+        <div class="filters">
+          <!-- Filter Header -->
+          <div class="filter-btn">
+            <h5><b>FILTERS</b></h5>
+            <p>reset</p>
+          </div>
+
+          <hr>
+
+          <!-- Accordion for Filters -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <!-- Skill Filter -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button p-2 " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                  <b>Skill</b>
+                </button>
+              </h2>
+              <!-- Add the 'show' class here to make the accordion open by default -->
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="category">
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          Electricians
+                        </label>
+                      </div>
+                    </div>
+                    <b><span class="text-primary">(24)</span></b>
+                  </a>
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          Plumbers
+                        </label>
+                      </div>
+                    </div>
+                    <b><span class="text-primary">(15)</span></b>
+                  </a>
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          Carpenters
+                        </label>
+                      </div>
+                    </div>
+                    <b><span class="text-primary">(8)</span></b>
+                  </a>
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          Mechanics
+                        </label>
+                      </div>
+                    </div>
+                    <b><span class="text-primary">(12)</span></b>
+                  </a>
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          Painters
+                        </label>
+                      </div>
+                    </div>
+                    <b><span class="text-primary">(18)</span></b>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Accordion Items -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed p-2 " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <b>Price</b>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse show p-2"
+                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="filter-btn">
+                  <div class="low-high">
+                    <h6>Low to High<i class="fad fa-arrow-down mx-2"
+                        style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></i></h6>
+                  </div>
+                  <div class="low-high">
+                    <h6>High to Low<i class="fad fa-arrow-up mx-2"
+                        style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></i></h6>
+                  </div>
+                </div>
+                <div class="priceinput">
+                  <div class="pricetext row">
+                    <div class="col-4 tag"><input type="number" placeholder="Min"></div>
+                    <div class="col-4 tag"><input type="number" placeholder="Max"></div>
+                    <div class="col-4 tag">
+                      <div class="btn btn-primary button"><i class="fas fa-check" style="color: #ffffff;"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <b>Experience Level</b>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
+                <div class="category">
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          6 months
+                        </label>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          1 year
+                        </label>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          2 years
+                        </label>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          3 years
+                        </label>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#">
+                    <div>
+                      <div class="checkbox-wrapper-27">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__icon"></span>
+                          5 years
+                        </label>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <hr>
+          </div>
+
+        </div>
+      </div>
+      <!-- End of Filter Section -->
+
+      <!-- Placeholder for Skill Cards (col-9) -->
+      <div class="col-lg-9 col-sm-12">
+        <div class="topbar">
+          <input type="text" class="animated-input" placeholder="Search...">
+          <button class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+
+
+        <!-- ---card-section----- -->
+       
+        <div class="row h-100 ">
+            <!-- Left column with contact card, centered vertically -->
+
+
+            <!-- Right column with image -->
+            <div class="container mt-5">
+                <div class="row justify-content-center align-items-center">
+                    <!-- Contact Form Column --> 
+                    <div class="col-lg-6 col-md-8 col-sm-10">
+                        <h2 class="text-center mb-4">Contact Us</h2>
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                        <p class="text-center mt-4">We'll get back to you as soon as possible!</p>
+                    </div>
+            
+                    <!-- Lottie Animation Column --><div class="col-lg-6 col-md-8 d-flex justify-content-center mt-4 mt-lg-0">
+                        <dotlottie-player src="https://lottie.host/8f42a5cd-7144-4059-9da8-12c54179e68d/l61A3TV3Y1.json"
+                        background="transparent" speed="1" style="width: 100%; max-width: 400px; height: auto;" loop autoplay>
+                    </dotlottie-player>
+                    
+                </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+
+        </div> 
+
+
+
+      </div>
+
+    </div>
+  </div>
+  <footer class="footer bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12 mb-4">
+                <h4>About Us</h4>
+                <p>Salman is a passionate programmer who thrives on solving complex problems through code. With
+                    expertise in various programming languages, he enjoys creating innovative software
+                    solutions. Always eager to learn, he embraces challenges that enhance his skills and
+                    contribute to impactful projects.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-12 text-center mb-4">
+                <b>
+                    <a class="navbar-brand" href="#">
+                        <span class="text-success">PaK</span>Fixer
+                    </a>
+                </b>
+                <p>&copy; 2024 PakFixer. All rights reserved.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-12">
+                <h4>Contact Us</h4>
+                <p>Email: Pakfixer@gmail.com</p>
+                <p>Phone: 15</p>
+                <p>Address: Gulshan e Maymar</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <!-- Custom JS -->
+  <script src="./assests/js/my.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="./assests/bootsrap/bootstrap.bundle.js"></script>
+</body>
+
+</html>

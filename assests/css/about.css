@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.about-us-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.about-us-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.about-us-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.603);
+    /* Black overlay with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-overlay-text {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-cards {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    background-color: white;
+}
