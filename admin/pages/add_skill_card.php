@@ -26,18 +26,45 @@ include("../components/sidebar.php");
 
                             <div class="card-header">
                                 <h5 class="card-title">Add New Card</h5>
+                                <script>
+                                    swal({
+                                        title: "Good job!",
+                                        text: "You clicked the button!",
+                                        icon: "success",
+                                        button: "Aww yiss!",
+                                    });
+                                </script>
                                 <div>
+
                                     <?php
                                     if (isset($_GET['card'])) {
                                         if ($_GET['card'] == 'yes') {
-                                         
-                                        } else {
-                                     
+                                            $message = isset($_GET['message']) ? $_GET['message'] : 'Card created successfully!';
+                                            echo "<script>
+            Swal.fire({
+                title: 'Good job!',
+                text: '$message',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        </script>";
+                                        } else if ($_GET['card'] == 'no') {
+                                            $message = isset($_GET['message']) ? $_GET['message'] : 'Something went wrong.';
+                                            echo "<script>
+            Swal.fire({
+                title: 'Oops!',
+                text: '$message',
+                icon: 'error',
+                confirmButtonText: 'Try Again'
+            });
+        </script>";
                                         }
                                     }
-
-
                                     ?>
+
+
+
+
                                 </div>
                             </div>
                             <div class="card-body">
