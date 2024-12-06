@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo  BASE_URL ?>assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
 
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/vendors/iconly/bold.css">
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/vendors/bootstrap-icons/bootstrap-icons.css">
-  
+
     <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/css/app.css">
     <link rel="shortcut icon" href="<?php echo BASE_URL ?>assets/images/favicon.svg" type="image/x-icon">
 </head>
@@ -57,7 +59,7 @@
                                     <a href="<?php echo BASE_URL; ?>pages/add_skill_card.php">Add Skill Card</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="component-badge.html">Total Skill Card</a>
+                                    <a href="../pages/total_card.php">Total Skill Card</a>
                                 </li>
 
                             </ul>

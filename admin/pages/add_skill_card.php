@@ -26,41 +26,8 @@ include("../components/sidebar.php");
 
                             <div class="card-header">
                                 <h5 class="card-title">Add New Card</h5>
-                                <script>
-                                    swal({
-                                        title: "Good job!",
-                                        text: "You clicked the button!",
-                                        icon: "success",
-                                        button: "Aww yiss!",
-                                    });
-                                </script>
-                                <div>
 
-                                    <?php
-                                    if (isset($_GET['card'])) {
-                                        if ($_GET['card'] == 'yes') {
-                                            $message = isset($_GET['message']) ? $_GET['message'] : 'Card created successfully!';
-                                            echo "<script>
-            Swal.fire({
-                title: 'Good job!',
-                text: '$message',
-                icon: 'success',
-                confirmButtonText: 'OK'
-            });
-        </script>";
-                                        } else if ($_GET['card'] == 'no') {
-                                            $message = isset($_GET['message']) ? $_GET['message'] : 'Something went wrong.';
-                                            echo "<script>
-            Swal.fire({
-                title: 'Oops!',
-                text: '$message',
-                icon: 'error',
-                confirmButtonText: 'Try Again'
-            });
-        </script>";
-                                        }
-                                    }
-                                    ?>
+                                <div>
 
 
 
@@ -301,3 +268,24 @@ include("../components/sidebar.php");
 
         });
     </script>
+    <?php
+    if (isset($_GET['card'])) {
+        // Define messages for success and error
+        $successMessage = isset($_GET['message']) ? $_GET['message'] : 'Card created successfully!';
+        $errorMessage = isset($_GET['message']) ? $_GET['message'] : 'Something went wrong. Please try again.';
+
+        echo "<script>
+        // Display SweetAlert based on the card status
+        Swal.fire({
+            title: '" . ($_GET['card'] == 'yes' ? "Good job!" : "Oops...") . "',
+            text: '" . ($_GET['card'] == 'yes' ? $successMessage : $errorMessage) . "',
+            icon: '" . ($_GET['card'] == 'yes' ? "success" : "error") . "',
+            " . ($_GET['card'] == 'no' ? "footer: '<a href=\"#\">Need more help?</a>'," : "") . "
+            confirmButtonText: 'OK'
+        }).then(() => {
+            // Redirect to the base URL after alert is closed
+            window.location.href = 'http://localhost/PakFixer/admin/pages/add_skill_card.php';
+        });
+    </script>";
+    }
+    ?>
